@@ -9,6 +9,11 @@ import java.time.LocalDateTime;
 @Entity
 @Table(name = "protocolo_sepse")
 public class ProtocoloSepse {
+
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "sinais_vitais_id", referencedColumnName = "id")
+    private SinaisVitais sinaisVitais;
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

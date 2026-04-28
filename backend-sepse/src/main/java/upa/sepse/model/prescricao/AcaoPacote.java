@@ -2,6 +2,7 @@ package upa.sepse.model;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import upa.sepse.model.protocolo.ProtocoloSepse;
 
 import java.time.LocalDateTime;
 
