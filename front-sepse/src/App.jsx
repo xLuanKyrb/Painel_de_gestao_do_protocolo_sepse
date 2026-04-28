@@ -1,17 +1,16 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import ModoTV from './pages/ModoTV';
-import PainelClinico from './pages/PainelClinico';
+import Login from './pages/Login';
+import Painel from './pages/Painel';
+import PainelTI from './pages/PainelTI';
 
-function App() {
+export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/tv" element={<ModoTV />} />
-        
-        <Route path="/painel" element={<PainelClinico />} />
+        <Route path="/" element={<Login />} />
+        <Route path='/painel' element={<Painel />} />
+        <Route path='/ti' element={<PainelTI />} />
       </Routes>
     </BrowserRouter>
   );
 }
-
-export default App;

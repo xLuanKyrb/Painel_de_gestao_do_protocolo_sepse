@@ -1,4 +1,4 @@
-package upa.sepse.model;
+package upa.sepse.model.cliente;
 
 import jakarta.persistence.*;
 import lombok.Data;
